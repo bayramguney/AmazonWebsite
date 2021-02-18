@@ -1,0 +1,152 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3130895700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.start()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Searching product",
+        "description": "",
+        "id": "finding-top-10-products-from-amazon;searching-product",
+        "after": [
+          {
+            "result": {
+              "duration": 1382130800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.after(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 252910952800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User goes to \"https://www.amazon.com/\" website",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.amazon.com/",
+                  "offset": 14
+                }
+              ],
+              "location": "Product.user_goes_to_website(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 925089900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Randomly fetch the product from the list in the excel file",
+            "match": {
+              "location": "Product.randomly_fetch_the_product_from_the_list_in_the_excel_file()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 37911546600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Search the item",
+            "match": {
+              "location": "Product.search_the_item()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 532858100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Click Sort By and choose \"Price: Low to High\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Price: Low to High",
+                  "offset": 26
+                }
+              ],
+              "location": "Product.click_Sort_By_and_choose(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5946530600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Take first 10 of products",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 11
+                }
+              ],
+              "location": "Product.take_first_of_products(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "validate them including the item fetched from excel",
+            "match": {
+              "location": "Product.validate_them_including_the_item_fetched_from_excel()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 267899400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "print them as a pdf file",
+            "match": {
+              "location": "Product.print_them_as_a_pdf_file()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Finding Top 10 products from Amazon",
+    "description": "",
+    "id": "finding-top-10-products-from-amazon",
+    "keyword": "Feature",
+    "uri": "top10product.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@product"
+      }
+    ]
+  }
+]

@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="My test" parallel="methods" thread-count="4">
+    <test name="tests regression">
+        <classes>
+            <class name="com.amazon.runners.TestRunner"/>
+
+        </classes>
+
+    </test>
+</suite>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [My test]" parallel="methods">
+  <test thread-count="4" name="tests regression(failed)" parallel="methods">
+    <classes>
+      <class name="com.amazon.runners.TestRunner">
+        <methods>
+          <include name="configReport"/>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.amazon.runners.TestRunner -->
+    </classes>
+  </test> <!-- tests regression(failed) -->
+</suite> <!-- Failed suite [My test] -->
